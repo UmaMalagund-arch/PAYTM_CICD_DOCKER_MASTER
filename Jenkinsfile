@@ -5,7 +5,7 @@ pipeline{
     }
     environment {
         DOCKERHUB_CREDENTIALS_ID = 'credentials' 
-        DOCKERHUB_USERNAME       = 'shyam0115'
+        DOCKERHUB_USERNAME       = 'umamalagund9620'
         IMAGE_NAME               = "${env.DOCKERHUB_USERNAME}/my-app"
         CONTAINER_NAME           = "my-app-container"
     }
@@ -13,7 +13,7 @@ pipeline{
         stage('Github src') {
             steps {
                 echo 'Checking out source code...'
-                git branch: 'master', url: 'https://github.com/A-Shyam/paytm_cicd_docker'
+                git branch: 'master', url: 'https://github.com/UmaMalagund-arch/PAYTM_CICD_DOCKER_MASTER'
             }
         }
 
