@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Paytm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page">
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">₹</span>
+                <span class="logo-text">Paytm</span>
+            </a>
+            <div class="nav-buttons">
+                <a href="signin.html" class="btn-signin">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sign Up Section -->
+    <section class="auth-section">
+        <div class="auth-container">
+            <div class="auth-card">
+                <h1 class="auth-title">Create Your Account</h1>
+                <p class="auth-subtitle">Join millions of users on Paytm</p>
+
+                <form class="auth-form" id="signupForm">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                        <span class="error-message" id="fullname-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your 10-digit phone number" required>
+                        <span class="error-message" id="phone-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+                        <span class="error-message" id="password-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                        <span class="error-message" id="confirm-password-error"></span>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the Terms & Conditions and Privacy Policy</label>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-full">Create Account</button>
+                </form>
+
+                <p class="auth-footer">Already have an account? <a href="signin.html">Sign In</a></p>
+            </div>
+
+            <div class="auth-image">
+                <div class="image-content">
+                    <div class="image-icon">🎉</div>
+                    <h2>Welcome to Paytm</h2>
+                    <p>Start your digital payment journey with us</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

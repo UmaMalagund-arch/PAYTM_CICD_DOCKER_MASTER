@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Paytm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page">
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">₹</span>
+                <span class="logo-text">Paytm</span>
+            </a>
+            <div class="nav-buttons">
+                <a href="signup.html" class="btn-signin">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sign In Section -->
+    <section class="auth-section">
+        <div class="auth-container">
+            <div class="auth-card">
+                <h1 class="auth-title">Welcome Back</h1>
+                <p class="auth-subtitle">Sign in to your Paytm account</p>
+
+                <form class="auth-form" id="signinForm">
+                    <div class="form-group">
+                        <label for="login-email">Email or Phone</label>
+                        <input type="text" id="login-email" name="login-email" placeholder="Enter your email or phone number" required>
+                        <span class="error-message" id="login-email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="login-password" placeholder="Enter your password" required>
+                        <span class="error-message" id="login-password-error"></span>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-full">Sign In</button>
+                </form>
+
+                <div class="auth-divider">OR</div>
+
+                <button class="btn-secondary btn-full">Sign In with OTP</button>
+
+                <p class="auth-footer">Don't have an account? <a href="signup.html">Sign Up</a></p>
+                <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+            </div>
+
+            <div class="auth-image">
+                <div class="image-content">
+                    <div class="image-icon">🔐</div>
+                    <h2>Secure Login</h2>
+                    <p>Your account is protected with bank-level security</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
